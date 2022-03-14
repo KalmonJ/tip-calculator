@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+.main__card {
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 680px;
+  height: 350px;
+  display: flex;
+  padding: 2rem;
+}
+
+.button__main {
+  width: 80px;
+  height: 40px;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  background-color: #00494d;
+  color: #f4fafa ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.inputNumber {
+  height: 30px;
+  grid-column: span 3;
+  margin-bottom: 2rem;
+  width: 286px;
+  background-color: #f4fafa;
+  border: none;
+  color: #00494d;
+  font-size: 20px;
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+  padding: 0 5px;
+}
+
+.inputNumber::placeholder {
+  color: #00494d;
+}
+
+.inputPeople::placeholder {
+  color: #00494d;
+}
+
+.inputPeople{
+  height: 30px;
+  grid-column: span 3;
+  width: 286px;
+  background-color: #f4fafa;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+  padding: 0 5px;
+  font-size: 20px;
+  color: #00494d;
+}
+
+.button__layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  margin-top: 0.5rem;
+  row-gap: 1rem;
+}
+
+.result{
+  display: flex;
+  width: 50%;
+  background-color: #00494d;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.result__span{
+  font-size: 30px;
+  color: hsl(172, 67%, 45%);
+}
+
+.showResult{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.showResult> p{
+  color: white;
+  font-size: 13px;
+}
+
+.person{
+  color: hsl(186, 14%, 43%);
+  font-size: 12px;
+}
+
+p {
+  color: hsl(186, 14%, 43%);
+  font-size: 13px;
+}
+
+.Button__reset{
+  margin-top: 5rem;
+  width: 90%;
+  height: 33px;
+  background-color: #26c0ab;
+  border: none;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Space Mono', monospace;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button__main.focus, 
+.button__main:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.NumberOfPeople{
+  margin-top: 1.5rem;
+}
+
+.IconDollar {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 15px;
+  width: 12px;
+}
+
+.IconPerson {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 15px;
+  width: 12px;
+}
+
+.main__div--input{
+  position: relative;
+}
+
+.main__logo{
+  position: absolute;
+  top: 170px;
+  left: center;
+}
+
+@media screen and (max-width: 700px){
+  .main__card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-top: 5rem;
+  }
+
+  .result{
+    margin-top: 1rem;
+    width: auto;
+  }
+
+  .main {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+  .Button__reset{
+    margin-bottom: 1rem;
+  }
+
+  .button__layout {
+    column-gap: 1.4rem;
+  }
+
+  .IconDollar{
+    position: relative;
+    top: 30px;
+    left: 15px;
+
+  }
+
+  .IconPerson{
+    position: relative;
+    top: 30px;
+    left: 15px;
+  }
+
+  .main__logo{
+    position: absolute;
+    top: 25px;
+    left: center;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .main__card {
+    height: 650px;
+    margin-top: unset;
+  }
+
+  .main__logo{
+    display: none;
+  }
+
+  .result{
+    height: 250px;
+  }
+
+  .Button__reset{
+    margin-top: 2rem;
+  }
+  
+}
